@@ -1,166 +1,34 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="title" content="Pwned By Nusantara">
-    <meta name="description" content="United Among Muslim Hackers">
-    <meta name="keywords" content="Nusantara">
-    <meta name="image" content="https://i.ibb.co/M1Cbh53/gabungan.png">
-    <meta name="googlebot" content="index,follow">
-    <meta name="robots" content="index, follow">
-    <meta name="robots schedule" content="auto">
-    <meta name="distribution" content="global">
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/M1Cbh53/gabungan.png">
-    <link href='https://fonts.googleapis.com/css?family=Sedgwick+Ave' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-    <script src="https://raw.githubusercontent.com/Amca-qt/Amca-qt.github.io/main/Js/OpIsrael.js"></script>
-    <title>Pwned By Nusantara</title>
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Paytone+One");
-      body {
-        background-color: #000000;
-        background-image:url('');
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      #wrapper {
-        text-align: center;
-		    left: 0;
-		    right: 0;
-		    top: 43%
-      }
-      a { 
-        color: red; 
-      }
-      g {
-        color: green;
-      }
-      text {
-        font-family: Righteous;
-        color: aliceblue;
-      }
-      .style2 {
-        font-family: "Cooper Black";
-        font-size: 20px; /* Adjust the font size here */
-        text-shadow: red 0px 0px 4px;
-      }
-    </style>
-    <div id="wrapper">
-      <img src="https://i.ibb.co/M1Cbh53/gabungan.png" height="225px">
-      <br>
-      <script text="type/javascript">
-              window.addEventListener("mouseover", play);
-        window.addEventListener("click", play);
-    
-        function play() {
-            document.getElementById("a").play();
-        }
-    
-        var farbbibliothek = new Array();
-    
-        farbbibliothek[0] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
-        farbbibliothek[1] = new Array("#00FF00", "#000000", "#00FF00", "#00FF00");
-        farbbibliothek[2] = new Array("#00FF00", "#FF0000", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00");
-        farbbibliothek[3] = new Array("#FF0000", "#FF4000", "#FF8000", "#FFC000", "#FFFF00", "#C0FF00", "#80FF00", "#40FF00", "#00FF00", "#00FF40", "#00FF80", "#00FFC0", "#00FFFF", "#00C0FF", "#0080FF", "#0040FF", "#0000FF", "#4000FF", "#8000FF", "#C000FF", "#FF00FF", "#FF00C0", "#FF0080", "#FF0040");
-        farbbibliothek[4] = new Array("#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000", "#990000", "#880000", "#770000", "#660000", "#550000", "#440000", "#330000", "#220000", "#110000", "#000000", "#110000", "#220000", "#330000", "#440000", "#550000", "#660000", "#770000", "#880000", "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000");
-        farbbibliothek[5] = new Array("#000000", "#000000", "#000000", "#FFFFFF", "#FFFFFF", "#FFFFFF");
-        farbbibliothek[6] = new Array("#0000FF", "#FFFF00");
-    
-        var farben = farbbibliothek[4];
-    
-        function farbschrift() {
-            for (var i = 0; i < Buchstabe.length; i++) {
-                var spanElement = document.all["a" + i];
-                spanElement.style.color = farben[i];
-    
-                // Adjust the font size here
-                spanElement.style.fontSize = "45px"; // Change to your desired font size
-            }
-            farbverlauf();
-        }
-    
-        function string2array(text) {
-            Buchstabe = new Array();
-            while (farben.length < text.length) {
-                farben = farben.concat(farben);
-            }
-            var k = 0;
-            while (k <= text.length) {
-                Buchstabe[k] = text.charAt(k);
-                k++;
-            }
-        }
-    
-        function divserzeugen() {
-            for (var i = 0; i < Buchstabe.length; i++) {
-                document.write("<span id='a" + i + "' class='a" + i + "'>" + Buchstabe[i] + "</span>");
-            }
-            farbschrift();
-        }
-    
-        var a = 1;
-    
-        function farbverlauf() {
-            for (var i = 0; i < farben.length; i++) {
-                farben[i - 1] = farben[i];
-            }
-            farben[farben.length - 1] = farben[-1];
-            setTimeout("farbschrift()", 30);
-        }
-    
-        var farbsatz = 1;
-    
-        function farbtauscher() {
-            farben = farbbibliothek[farbsatz];
-            while (farben.length < text.length) {
-                farben = farben.concat(farben);
-            }
-            farbsatz = Math.floor(Math.random() * (farbbibliothek.length - 0.0001));
-        }
-    
-        setInterval("farbtauscher()", 5000);
-    
-        var text = "#OpsBadai";
-        string2array(text);
-        divserzeugen();  
-      </script>
-      <!--<img src="https://cdn.pixabay.com/animation/2022/09/13/17/55/17-55-41-668_512.gif" height="225px">-->
-      <b>
-        <br>
-        <p>
-      <font face="Paytone One" style="color: white; text-shadow: 0px 1px 7px black;">
-        Pwned by Nusantara. <a>We Are Nusantara</a></b>
-    </font>
-        <text>
-        <br>
-        <br>
-        TO ALL MUSLIMS AND HUMANITY AROUND THE WORLD FROM ALLAH WE CAME, TO HIM SHALL WE RETURN. ISLAM IS A RELIGION OF PEACE. WE MUST BE UNITED
-        <br>
-        IT IS INHUMANE OF US TO JUST SIT STILL AND DO NOTHING. <a>AGGRESSION, OPPRESSION, OCCUPATION</a> STILL HAPPENS. APARTHEID IS A CRIME AGAINST HUMANITY AND WE SHALL JOIN FORCES. <br> 
-        BE IT <strong>INDIVIDUAL, CELEBRITIES, PUBLIC FIGURES, ANY MEDIA POWER HOUSE, POLITICAL FIGURES</strong> WHOM STAND THEIR GROUND TO PROTECT WHATS LEFT FROM THE EVIL DOING. <br>
-        A BRUTAL REGIME <a>ZIONIST</a> SHALL PERISH ALONG WITH GHARQAD AND ITS BELIEVERS. <br>
-        PROVOCATION SHOULD BE STOPPED AT ALL COSTS. <a>BLOOD</a> IS IN YOUR HANDS, IF YOU WERE TO SIT STILL AND DO NOTHING.
-      <br>
-      <br>
-      <g>WE CAME, WE SAW AND WE SHARE.</g>
-      <br>TECHNOLOGIES OF THE MODERN WORLD SHOULD BE USED FOR THE GOOD CAUSE.
-      <br>
-      <br>EXPECT THE BADAI AND TAUFAN!! FROM THE RIVER TO THE SEA, <g>PALESTINE WILL BE FREE.</g>
-      <br>
-      <br>WORLD SHOULD UNITE IN THE NAME OF <g>HUMANITY.</g> ALLAH IS THE ALMIGHTY!! MAY YOU BE REWARDED WITH GOOD DEEDS IN THIS WORLD AND THE HEREAFTER. AMEEN.
-      <br>
-       <g>OpsBadai</g> Engaged !!   
-      <br>
-      <br>
-        Greet : <br> Hacktivist Of Garuda - VulzSec - Darkside1337 - Hackncorp - Misterious Team Bangladesh - Investigation Anonymous - DragonForce Malaysia - 177 Members - SynixCyberCrime - 4-EXPLOITATION - LapanWasTaken - BlackShieldCrew - MyHC - Kampung Komuniti DdosLegacy - LebahGatal - CsCrew - Khalifah Cyber Crew<br> <g>Malaysian Hacker</g> x <g>Indonesian Hacker</g>
-      <br>
-      <br>
-      Copyright &copy; 2023 I Am Nusantara. All Rights Reserved.
-        </p>
-        <audio id="a" src="https://f.top4top.io/m_2891t33fd1.mp3" autoplay></audio>
-      </body>
-      </b>
-    </div>
-    </head>
-  </body>
-</html>
+<html><head> 
+  <title>Hacked By Hacktivist Of Garuda Feat DragonForce Malaysia </title> 
+  <link href="https://i.ibb.co/HrdjkPs/6262453602429811023-121.jpg" rel="stylesheet"> 
+  <meta name="description" content="#SAVEPALESTINE "> 
+  <link rel="icon" " < iframe> 
+ </head> 
+ <body bgcolor="black"> 
+  <table height="100%" width="100%"> 
+   <tbody> 
+    <tr> 
+     <td align="center"> <img src="https://i.ibb.co/HrdjkPs/6262453602429811023-121.jpg" style="height=" 300px" width="400px;"> <br><br> <font face="VT323" color="red" size="3">Greetings The Government and World. <br>We Are Hacktivist Of Garuda<img src="https://i.imgur.com/Imsbaxc.gif" style="margin:0 0 -0px 0;width:20px;height:20px;"></font> <font color="red">and DragonForce Malaysia<br>
+     <br>
+     Because we are the voice of <g>Palestine</g>, The voice of Muslim and we will not remain silent !
+     <br>
+     A cursory glance at various Western media outlets this month on the latest round of Israeli
+     aggression against <g>Palestinians</g> has more often than not, revealed ongoing bias or false equivalencies in the
+     framing of their coverage. <br> 
+     They frequently reported this issue as a conflict and criticized <g>HAMAS</g> as the cause of such an issue. <br>
+     However, this is not a conflict. <br>
+     Instead, it was the oppression of Palestine, a <a>GENOCIDE</a>. 
+     <br>
+     <br>
+     Your vital databases will be
+     exposed along with secret documents to show the true color of <a>Zionists</a>. <br>
+     Let the world know the violent acts of
+     Zionism ! 
+     <br>
+     <br>
+     #<g>OpsIsrael</g> Engaged !!   
+     <br>
+        <audio src="https://kosred.com/a/vrohop.mp3" autoplay="" controls="https://c.top4top.io/m_2361hvk7o0.mp3"></audio><p></p> <br> <font color="red"> </font> -= Greetz =- <br> Hacktivist Of Garuda - Darkside1337 - Hackncorp - Misterious Team Bangladesh - Investigation Anonymous  - DragonForce Malaysia - 177 Members <br> <font><br><br><font face="times" color="white" size="4">We Are: Caisar ID - AgusHackpath - X'Boy Linux - muhammad syarif sajjad - S4NGKURl4NG - عقيل - ./Fake root - Obito Haxor - tn.Lapendos - ./W4D3R 1337 - ./Had3s - OneZero - Nulz Haxor - Noname Haxor - VN9 - uchiha obiTo <br> - Fahri.XD - Rizky R Linux - ./Jee<br><b></b><p><font color="red" face="times"><br><b>HACKTIVIST OF GARUDA  - DRAGONFORCE MALAYSIA <br> #Indonesian Hackers #Malaysian Hacker</b></font><br> </p></font></font></font></font></td> 
+    </tr> 
+   </tbody> 
+  </table> 
